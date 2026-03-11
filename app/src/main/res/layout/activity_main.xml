@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/heater4_L"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Наклон залний"
+        app:layout_constraintStart_toStartOf="@+id/heater2_J"
+        app:layout_constraintTop_toBottomOf="@+id/heater2_J" />
+
+    <Button
+        android:id="@+id/heater3_K"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Наклон задний"
+        app:layout_constraintStart_toStartOf="@+id/reserve_I"
+        app:layout_constraintTop_toBottomOf="@+id/reserve_I" />
+
+    <Button
+        android:id="@+id/heater3_M"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Stop All"
+        app:layout_constraintStart_toStartOf="@+id/heater3_K"
+        app:layout_constraintTop_toBottomOf="@+id/heater3_K" />
+
+    <Button
+        android:id="@+id/heater3_R"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="R"
+        app:layout_constraintStart_toStartOf="@+id/heater4_L"
+        app:layout_constraintTop_toBottomOf="@+id/heater4_L" />
+
+    <Button
+        android:id="@+id/heater2_J"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:text="Выдвижение низа"
+        app:layout_constraintStart_toStartOf="@+id/Heater_off_H"
+        app:layout_constraintTop_toBottomOf="@+id/Heater_off_H" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:text="Connect"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Chair left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/Bottom_frontwardA"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Подголовник "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Button
+        android:id="@+id/Bottom_backwardB"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Подголовник"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/Bottom_frontwardA" />
+
+    <Button
+        android:id="@+id/Backrest_frontwardC"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Спинка"
+        app:layout_constraintStart_toStartOf="@+id/Bottom_frontwardA"
+        app:layout_constraintTop_toBottomOf="@+id/Bottom_frontwardA" />
+
+    <Button
+        android:id="@+id/Backrest_backwardD"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Спинка"
+        app:layout_constraintStart_toStartOf="@+id/Bottom_backwardB"
+        app:layout_constraintTop_toBottomOf="@+id/Bottom_backwardB" />
+
+    <Button
+        android:id="@+id/Headrest_UPE"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Наклон передний"
+        app:layout_constraintStart_toStartOf="@+id/Backrest_frontwardC"
+        app:layout_constraintTop_toBottomOf="@+id/Backrest_frontwardC" />
+
+    <Button
+        android:id="@+id/Headrest_downF"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Наклон передний"
+        app:layout_constraintStart_toStartOf="@+id/Backrest_backwardD"
+        app:layout_constraintTop_toBottomOf="@+id/Backrest_backwardD" />
+
+    <Button
+        android:id="@+id/HeaterG"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Вперед перемещение"
+        app:layout_constraintStart_toStartOf="@+id/Headrest_UPE"
+        app:layout_constraintTop_toBottomOf="@+id/Headrest_UPE" />
+
+    <Button
+        android:id="@+id/reserve_I"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Выдвижеине низа"
+        app:layout_constraintStart_toStartOf="@+id/HeaterG"
+        app:layout_constraintTop_toBottomOf="@+id/HeaterG" />
+
+    <Button
+        android:id="@+id/Heater_off_H"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Вперед перемещение"
+        app:layout_constraintStart_toStartOf="@+id/Headrest_downF"
+        app:layout_constraintTop_toBottomOf="@+id/Headrest_downF" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="Heater"
+        app:layout_constraintBottom_toTopOf="@+id/PWM_heater_seekBar"
+        app:layout_constraintEnd_toStartOf="@+id/Heater_off_H"
+        app:layout_constraintStart_toEndOf="@+id/HeaterG" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <SeekBar
+        android:id="@+id/PWM_heater_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="220dp"
+        android:max="3"
+        android:orientation="vertical"
+        android:progress="0"
+        android:rotation="-90"
+        app:layout_constraintEnd_toStartOf="@+id/heater4_L"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/heater3_K"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll_console"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heater3_M">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/consoleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Console:\n" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вверх"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вниз"
+        app:layout_constraintStart_toStartOf="@+id/Bottom_backwardB"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
