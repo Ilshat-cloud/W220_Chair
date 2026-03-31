@@ -398,7 +398,7 @@ class MainActivity : AppCompatActivity() {
                                         // M
                                         buttonM.setBackgroundColor(Color.GREEN)
                                     }else{
-                                        buttonM.setBackgroundColor(Color.GRAY)
+                                        buttonM.setBackgroundColor(Color.RED)
                                     }
                                     if ((b2 and 0x08) != 0) { // R: GPIO12 toggle
                                         // R
@@ -483,7 +483,7 @@ class MainActivity : AppCompatActivity() {
                                         // M
                                         buttonM.setBackgroundColor(Color.GREEN)
                                     }else{
-                                        buttonM.setBackgroundColor(Color.GRAY)
+                                        buttonM.setBackgroundColor(Color.RED)
                                     }
                                     if ((b2_slave and 0x08) != 0) { // R: GPIO12 toggle
                                         // R
